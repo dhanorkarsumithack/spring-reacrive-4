@@ -33,7 +33,6 @@ public class DemoController {
 
 
     //custom publisher
-
     @GetMapping("/demo2")
     public void demo2(){
 
@@ -97,11 +96,11 @@ public class DemoController {
         f1.subscribe(System.out::println);
 
 
-        Stream<Integer> s1=Stream.of(1,2,3,4,5); //cannot be reused like flux
-        //we can have many subscriber
-
-        s1.forEach(System.out::println);
-        s1.forEach(System.out::println);
+//        Stream<Integer> s1=Stream.of(1,2,3,4,5); //cannot be reused like flux
+//        //we can have many subscriber
+//
+//        s1.forEach(System.out::println);
+//        s1.forEach(System.out::println);
 
     }
 
